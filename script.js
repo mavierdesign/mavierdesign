@@ -14,25 +14,23 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 
   
-const swiper = new Swiper('.mySwiper', {
-  slidesPerView: 1,
+var swiper = new Swiper(".mySwiper", {
+  slidesPerView: 3, // para PC
   spaceBetween: 20,
-  centeredSlides: false,
   pagination: {
-    el: '.swiper-pagination',
+    el: ".swiper-pagination",
     clickable: true,
   },
-  navigation: false,
   breakpoints: {
-    640: {
-      slidesPerView: 2,
+    0: {          // desde 0px (móviles)
+      slidesPerView: 1,
+      spaceBetween: 10,
+    },
+    768: {        // desde 768px (tablets y PC)
+      slidesPerView: 3,
       spaceBetween: 20,
     },
-    1024: {
-      slidesPerView: 3,
-      spaceBetween: 30,
-    },
-  },
+  }
 });
 
 
