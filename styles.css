@@ -263,7 +263,6 @@ body {
 }
 
 .swiper-slide {
-  width: auto !important;  /* permite que Swiper controle el ancho */
   display: flex;
   justify-content: center;
 }
