@@ -247,26 +247,19 @@ body {
   color: var(--vino);
 }
 
+.swiper-pagination {
+  margin-top: 2rem; /* o 20px, lo que prefieras */
+  text-align: center;
+  /* Opcional: si quieres que los bullets estén más grandes */
+  --swiper-pagination-bullet-size: 12px;
+  --swiper-pagination-bullet-horizontal-gap: 8px;
+}
+
+
 .portafolio-carrusel .swiper {
   padding-left: 1rem;
   padding-right: 1rem;
-}
-
-@media (max-width: 768px) {
-  .swiper-slide {
-    justify-content: center;
-  }
-
-  .portafolio-carrusel .swiper {
-    padding-left: 2rem; /* Más espacio a la izquierda */
-    padding-right: 2rem; /* Más espacio a la derecha */
-  }
-
-  .swiper-button-next,
-  .swiper-button-prev {
-    top: 50%;
-    transform: translateY(-50%);
-  }
+  padding-bottom: 3rem;
 }
 
 .swiper-slide {
@@ -284,6 +277,7 @@ body {
   flex-direction: column;
   align-items: center;
   transition: transform 0.3s ease;
+  margin-bottom: 2rem;
 }
 
 .card:hover {
@@ -307,16 +301,6 @@ body {
   margin-bottom: 1rem;
 }
 
-@media (max-width: 768px) {
-  .card {
-    width: 220px;
-  }
-
-  .card img {
-    height: 280px;
-  }
-}
-
 .card h3 {
   font-size: 1.1rem;
   margin: 0.5rem 0;
@@ -326,20 +310,6 @@ body {
   font-size: 0.95rem;
   color: #333;
 }
-
-/* Flechas */
-.swiper-button-next,
-.swiper-button-prev {
-  color: var(--vino);
-}
-
-/* Responsive */
-@media (max-width: 768px) {
-  .img-placeholder {
-    height: 320px;
-  }
-}
-
 
 
 /*SOBRE NOSOTROS*/
