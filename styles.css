@@ -248,7 +248,7 @@ body {
 }
 
 .portafolio-carrusel .swiper {
-  padding-left: 6rem;
+  padding-left: 1rem;
   padding-right: 1rem;
 }
 
@@ -258,7 +258,7 @@ body {
   }
 
   .portafolio-carrusel .swiper {
-    padding-left: 4rem; /* Más espacio a la izquierda */
+    padding-left: 2rem; /* Más espacio a la izquierda */
     padding-right: 2rem; /* Más espacio a la derecha */
   }
 
