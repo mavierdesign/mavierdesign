@@ -7,6 +7,7 @@
   <link rel="stylesheet" href="styles.css" />
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet" />
   <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 </head>
 <body>
   <header class="header">
@@ -88,34 +89,71 @@
     </div>
   </section>
 
-<!-- Seccion de portafolio-->
-  <section id="portafolio" class="portafolio">
-    <div class="container" data-aos="fade-up">
-      <h2 class="section-title">Nuestro Portafolio</h2>
-      <div class="portafolio-grid">
-        <div class="proyecto">
-          <div class="imagen-placeholder"></div>
-          <h3>Invitación de boda</h3>
-          <p>Diseño elegante y clásico</p>
+<!-- Sección de portafolio con slider -->
+<section id="portafolio" class="portafolio-carrusel">
+  <div class="container" data-aos="fade-up">
+    <h2 class="section-title">Nuestro Portafolio</h2>
+
+    <!-- Carrusel Swiper -->
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+
+        <!-- Tarjeta 1 -->
+        <div class="swiper-slide">
+          <div class="card">
+            <img src="imagenes/invitacion.PNG" alt="Invitación boda">
+            <h3>Invitación boda(Web)</h3>
+            <p>Estilo elegante</p>
+          </div>
         </div>
-        <div class="proyecto">
-          <div class="imagen-placeholder"></div>
-          <h3>Menú digital</h3>
-          <p>Restaurante estilo gourmet</p>
+
+        <!-- Tarjeta 2 -->
+        <div class="swiper-slide">
+          <div class="card">
+            <img src="imagenes/invitacion_a.jpg" alt="Invitación cumpleaños">
+            <h3>Invitación digital</h3>
+            <p>Para todo tipo de eventos</p>
+          </div>
         </div>
-        <div class="proyecto">
-          <div class="imagen-placeholder"></div>
-          <h3>Tríptico para negocio</h3>
-          <p>Presentación de productos</p>
+
+        <!-- Tarjeta 3 -->
+        <div class="swiper-slide">
+          <div class="card">
+            <img src="imagenes/TRIPTICO.png" alt="Triptico">
+            <h3>Tripticos</h3>
+            <p>Para tu negocio</p>
+          </div>
         </div>
-        <div class="proyecto">
-          <div class="imagen-placeholder"></div>
-          <h3>Banner para redes</h3>
-          <p>Campaña de promoción</p>
+
+        <!-- Tarjeta 4 -->
+        <div class="swiper-slide">
+          <div class="card">
+            <img src="imagenes/MENU.png" alt="Menu">
+            <h3>Menú digital</h3>
+            <p>Restaurante gourmet</p>
+          </div>
         </div>
+
+        <!-- Tarjeta 5 -->
+        <div class="swiper-slide">
+          <div class="card">
+            <img src="imagenes/BANNER PARA REDES.png" alt="Banner">
+            <h3>Banner</h3>
+            <p>Banners para tus redes</p>
+          </div>
+        </div>
+
+        <!-- Puedes duplicar más tarjetas -->
       </div>
+
+      <!-- Flechas -->
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
     </div>
-  </section>
+  </div>
+</section>
+
+
 <!-- seccion sobre nosotros-->
   <section id="sobre-nosotros" class="sobre-nosotros">
     <div class="container">
@@ -130,10 +168,13 @@
             Con pasión, atención al detalle y compromiso, trabajamos para que tú solo te preocupes por disfrutar los resultados.
           </p>
         </div>
-        <div class="imagen-placeholder"></div>
+        <div class="imagen-placeholder">
+          <img src="imagenes/sobrenosotros.png" alt="Mavier Design" class="sobre-nosotros-img">
+        </div>
       </div>
     </div>
   </section>
+
 <!--CONTACTO-->
   <section id="contacto" class="contacto">
     <div class="container" data-aos="fade-up">
@@ -168,7 +209,8 @@
     </div>
   </footer>
   
-  
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
   <script src="script.js"></script>
 </body>
